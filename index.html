@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Educación Sexual - Condones</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f2f2f2;
+color:#222;
+}
+
+header{
+background:#ff4d6d;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+nav{
+background:#ff8fa3;
+text-align:center;
+padding:10px;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+background:white;
+margin:20px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+img{
+max-width:300px;
+display:block;
+margin:auto;
+border-radius:10px;
+}
+
+button{
+background:#ff4d6d;
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:6px;
+cursor:pointer;
+margin:5px;
+}
+
+button:hover{
+opacity:0.8;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:center;
+}
+
+th{
+background:#ff8fa3;
+color:white;
+}
+
+.chart{
+background:#ddd;
+height:20px;
+border-radius:10px;
+overflow:hidden;
+}
+
+.chart div{
+height:100%;
+background:#ff4d6d;
+width:0%;
+}
+
+footer{
+background:#ff4d6d;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Guía Completa sobre Condones</h1>
+<p>Prevención, salud sexual e información confiable</p>
+
+</header>
+
+<nav>
+
+<a href="#info">Información</a>
+<a href="#tipos">Tipos</a>
+<a href="#marcas">Marcas</a>
+<a href="#estadisticas">Estadísticas</a>
+<a href="#video">Video</a>
+<a href="#quiz">Quiz</a>
+<a href="#fuentes">Fuentes</a>
+
+</nav>
+
+<section id="info">
+
+<h2>¿Qué son los condones?</h2>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Condoms.jpg">
+
+<p>
+Los condones son un método anticonceptivo de barrera utilizado durante las relaciones sexuales para prevenir embarazos no deseados y reducir el riesgo de infecciones de transmisión sexual (ITS).
+</p>
+
+<p>
+Funcionan evitando el contacto entre fluidos corporales. Pueden estar hechos de materiales como látex, poliuretano o nitrilo.
+</p>
+
+</section>
+
+<section id="tipos">
+
+<h2>Tipos de condones</h2>
+
+<h3>Condón masculino</h3>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Male_condom.jpg">
+
+<p>Se coloca sobre el pene antes del contacto sexual.</p>
+
+<h3>Condón femenino</h3>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Female_condom.jpg">
+
+<p>Se coloca dentro de la vagina antes de la relación sexual.</p>
+
+<h3>Condones de sabores</h3>
+
+<p>Se usan principalmente para sexo oral y existen en varios sabores.</p>
+
+</section>
+
+<section id="marcas">
+
+<h2>Marcas populares</h2>
+
+<table>
+
+<tr>
+<th>Marca</th>
+<th>Descripción</th>
+<th>Comprar</th>
+</tr>
+
+<tr>
+<td>Durex</td>
+<td>Una de las marcas más reconocidas del mundo.</td>
+<td><a href="https://www.amazon.com.mx/s?k=durex+condones" target="_blank"><button>Comprar</button></a></td>
+</tr>
+
+<tr>
+<td>Trojan</td>
+<td>Muy popular en América.</td>
+<td><a href="https://www.amazon.com.mx/s?k=trojan+condones" target="_blank"><button>Comprar</button></a></td>
+</tr>
+
+<tr>
+<td>Skyn</td>
+<td>Condones sin látex.</td>
+<td><a href="https://www.amazon.com.mx/s?k=skyn+condones" target="_blank"><button>Comprar</button></a></td>
+</tr>
+
+</table>
+
+</section>
+
+<section id="estadisticas">
+
+<h2>Estadísticas sobre ITS</h2>
+
+<p>Personas que usan condón regularmente:</p>
+
+<div class="chart">
+<div id="barra"></div>
+</div>
+
+<button onclick="mostrar()">Mostrar datos</button>
+
+</section>
+
+<section id="video">
+
+<h2>Video educativo</h2>
+
+<iframe width="100%" height="315"
+src="https://www.youtube.com/embed/1H3bR7tN3lE"
+frameborder="0"
+allowfullscreen></iframe>
+
+</section>
+
+<section id="quiz">
+
+<h2>Quiz</h2>
+
+<p>¿Los condones previenen ITS?</p>
+
+<button onclick="sumar()">Sí</button>
+<button onclick="restar()">No</button>
+
+<p>¿Se pueden reutilizar?</p>
+
+<button onclick="restar()">Sí</button>
+<button onclick="sumar()">No</button>
+
+<p>Puntaje:</p>
+
+<p id="puntos">0</p>
+
+<button onclick="resultado()">Ver resultado</button>
+
+<p id="resultado"></p>
+
+</section>
+
+<section id="fuentes">
+
+<h2>Fuentes confiables</h2>
+
+<ul>
+<li>Organización Mundial de la Salud (OMS)</li>
+<li>CDC - Centers for Disease Control and Prevention</li>
+<li>Planned Parenthood</li>
+</ul>
+
+<p>
+Estas organizaciones recomiendan el uso del condón como uno de los métodos más efectivos para prevenir infecciones de transmisión sexual y embarazos cuando se utiliza correctamente.
+</p>
+
+</section>
+
+<footer>
+
+<p>Proyecto educativo sobre salud sexual</p>
+
+</footer>
+
+<script>
+
+let puntos=0;
+
+function sumar(){
+puntos++;
+document.getElementById("puntos").innerHTML=puntos;
+}
+
+function restar(){
+document.getElementById("puntos").innerHTML=puntos;
+}
+
+function resultado(){
+
+let texto="";
+
+if(puntos==2){
+texto="Excelente conocimiento";
+}
+else if(puntos==1){
+texto="Buen conocimiento";
+}
+else{
+texto="Debes aprender más";
+}
+
+document.getElementById("resultado").innerHTML=texto;
+
+}
+
+function mostrar(){
+document.getElementById("barra").style.width="70%";
+}
+
+</script>
+
+</body>
+</html> 
